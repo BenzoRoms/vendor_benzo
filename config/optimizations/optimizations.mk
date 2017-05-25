@@ -7,7 +7,7 @@ NO_SQUISHER := true
 TARGET_DEVICE := angler
 
 # Toolchain and other
-TARGET_GCC_VERSION_KERNEL := 6.3
+TARGET_GCC_VERSION_KERNEL := 8.0
 
 # benzoCore
 KBUILD_BUILD_USER := xanaxdroid
