@@ -83,6 +83,7 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LauncherUnreadService \
     LockClock \
+    MatLog \
     messaging \
     OmniJaws \
     OmniStyle \
