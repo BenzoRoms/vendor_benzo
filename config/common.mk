@@ -66,11 +66,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# init file
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/etc/init.benzo.rc:root/init.benzo.rc \
-    vendor/benzo/prebuilt/common/etc/init.benzo_power.sh:root/init.benzo_power.sh
-
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -84,22 +79,25 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     AOSPLinks \
-    BenzoOTA \
+    Eleven \
+    Gallery2 \
+    LauncherUnreadService \
     LockClock \
-    masquerade \
     messaging \
     OmniJaws \
     OmniStyle \
     OmniSwitch \
     Gallery2 \
+    SnapdragonGallery \
     Terminal \
     ThemeInterfacer \
 
 # Busybox & bash
 PRODUCT_PACKAGES += \
-    bash \
-    Busybox \
-    libncurses
+    Busybox
+
+#    bash \
+#    libncurses
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay/common
 
