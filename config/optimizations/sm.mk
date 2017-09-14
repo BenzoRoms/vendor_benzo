@@ -32,7 +32,7 @@
  LINARO_VER := $(shell cat $(LINARO_KERNEL_PATH)/VERSION)
 
   PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sm.kernel=$(LINARO_VER)
+    ro.linaro.version=$(LINARO_VER)
 
  # Add extra libs for the compilers to use
  export LD_LIBRARY_PATH := $(TARGET_ARCH_LIB_PATH):$(LD_LIBRARY_PATH)

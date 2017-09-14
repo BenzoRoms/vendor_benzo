@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0
 
@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
 # TEMP: Permissions
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/benzo/prebuilt/common/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-google.xml
+    vendor/benzo/prebuilt/common/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay/common
 
