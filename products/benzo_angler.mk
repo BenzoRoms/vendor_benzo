@@ -18,8 +18,8 @@ TARGET_VENDOR := huawei
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR6.170623.013 4283548 release-keys" \
-    BUILD_FINGERPRINT="google/angler/angler:8.0.0/OPR6.170623.013/4283548:user/release-keys"
+    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR6.170623.017 4298423 release-keys" \
+    BUILD_FINGERPRINT="google/angler/angler:8.0.0/OPR6.170623.017/4298423:user/release-keys"
 
 # Copy device specific prebuilt files.
 PRODUCT_COPY_FILES += \
