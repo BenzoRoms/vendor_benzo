@@ -11,6 +11,7 @@ export ANDROID_NAME
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
 ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
 OTA_DATE := $(shell date -u +%Y%m%d)
+BENZO_VERSION := $(ROM_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.benzo.version=$(ROM_VERSION) \
