@@ -80,14 +80,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
+    OmniSwitch \
     messaging \
     Terminal
 
-# Busybox & bash
-PRODUCT_PACKAGES += \
-    Busybox
-
-# TEMP: Permissions
+# Permissions
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
     vendor/benzo/prebuilt/common/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml
