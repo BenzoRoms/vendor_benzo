@@ -47,6 +47,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fingerprint=fpc
 
+# init.benzo.rc
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/init.benzo.rc:root/init.benzo.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
