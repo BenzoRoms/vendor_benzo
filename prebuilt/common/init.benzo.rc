@@ -1,0 +1,25 @@
+on init
+
+    export ANDROID_CACHE /cache
+    export TERMINFO /system/etc/terminfo
+
+on boot
+
+    start sysinit
+
+on property:sys.boot_completed=1
+
+# adb over network
+on property:service.adb.tcp.port=5555
+    stop adbd
+    start adbd
+on property:service.adb.tcp.port=-1
+    stop adbd
+    start adbd
+
+# init.d (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    oneshot
+    class late_start
+    user root
+    group root
